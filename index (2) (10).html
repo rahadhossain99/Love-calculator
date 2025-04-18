@@ -1,0 +1,1473 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💖 আধুনিক লাভ ক্যালকুলেটর 2025 🔥</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tiro+Bangla:ital@0;1&family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.js"></script>
+    <style>
+        :root {
+            --primary-color: #ff4d6d;
+            --secondary-color: #845ef7;
+            --accent-color: #ffd166;
+            --background-start: #fff0f3;
+            --background-end: #e2f3ff;
+            --text-color: #2b2d42;
+            --white-color: #ffffff;
+            --shadow-light: rgba(0, 0, 0, 0.08);
+            --shadow-medium: rgba(0, 0, 0, 0.12);
+            --shadow-dark: rgba(0, 0, 0, 0.18);
+            --border-color: rgba(0, 0, 0, 0.1);
+            --success-color: #06d6a0;
+            --info-color: #118ab2;
+            --warning-color: #ffd166;
+            --danger-color: #ef476f;
+            --disabled-color: #bdbdbd;
+            --font-primary: 'Hind Siliguri', sans-serif;
+            --font-heading: 'Tiro Bangla', serif;
+            --gold-color: #ffd700;
+            --platinum-color: #e5e4e2;
+            --diamond-color: #b9f2ff;
+            --love-meter-bg: #f8edeb;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-primary);
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            background: linear-gradient(160deg, var(--background-start), var(--background-end) 80%);
+            color: var(--text-color);
+            overflow-x: hidden;
+            padding: 40px 15px 80px 15px;
+            position: relative;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.96);
+            padding: 35px 45px;
+            border-radius: 35px;
+            box-shadow: 0 20px 50px var(--shadow-medium);
+            text-align: center;
+            max-width: 600px;
+            width: 100%;
+            border: 1px solid rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(15px);
+            animation: slideUpFadeIn 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+            position: relative;
+            z-index: 1;
+            margin-bottom: 30px;
+        }
+
+        @keyframes slideUpFadeIn {
+            0% { opacity: 0; transform: translateY(40px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        h1 {
+            font-family: var(--font-heading);
+            font-size: 2.8em;
+            font-weight: 700;
+            margin-bottom: 15px;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color), var(--primary-color));
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradientFlow 4s linear infinite;
+            line-height: 1.2;
+        }
+
+        @keyframes gradientFlow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .subtitle {
+            color: #5c677d;
+            margin-bottom: 40px;
+            font-size: 1.15em;
+            opacity: 0;
+            animation: fadeInDelay 1.2s ease 0.5s forwards;
+            line-height: 1.5;
+        }
+
+        @keyframes fadeInDelay {
+            to { opacity: 1; }
+        }
+
+        .input-group {
+            margin-bottom: 30px;
+            text-align: left;
+            position: relative;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 10px;
+            color: var(--secondary-color);
+            font-weight: 600;
+            font-size: 1.1em;
+            padding-left: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .input-group input[type="text"] {
+            width: 100%;
+            padding: 18px 22px 18px 55px;
+            border: 1px solid var(--border-color);
+            border-radius: 18px;
+            background-color: #f8f9fa;
+            box-shadow: inset 0 2px 4px var(--shadow-light);
+            font-size: 1.15em;
+            font-family: var(--font-primary);
+            color: var(--text-color);
+            transition: all 0.3s ease;
+        }
+        .input-group input[type="text"]::placeholder {
+            color: #90a4ae;
+        }
+        .input-group input[type="text"]:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            background-color: var(--white-color);
+            box-shadow: inset 0 2px 4px var(--shadow-light), 0 0 0 4px rgba(255, 23, 68, 0.15);
+        }
+        .input-group input[type="text"]:focus + .input-icon {
+             color: var(--primary-color);
+             transform: translateY(-50%) scale(1.1);
+        }
+        .input-group input[type="text"]:focus ~ label {
+            color: var(--primary-color);
+        }
+
+        .input-group .input-icon {
+            position: absolute;
+            left: 20px;
+            top: 60%;
+            transform: translateY(-50%);
+            font-size: 1.4em;
+            color: var(--secondary-color);
+            opacity: 0.8;
+            transition: all 0.3s ease;
+        }
+
+        button#calculateBtn {
+            width: 100%;
+            padding: 18px 25px;
+            background: linear-gradient(135deg, var(--primary-color), #f06292);
+            color: var(--white-color);
+            border: none;
+            border-radius: 18px;
+            cursor: pointer;
+            font-size: 1.5em;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), transform 0.1s ease;
+            margin-top: 20px;
+            box-shadow: 0 8px 20px rgba(255, 23, 68, 0.35);
+            position: relative;
+            overflow: hidden;
+            font-family: var(--font-primary);
+        }
+        button#calculateBtn i { margin-right: 10px; vertical-align: middle; }
+
+        button#calculateBtn:hover:not(:disabled) {
+            background: linear-gradient(135deg, #d81b60, var(--primary-color));
+            box-shadow: 0 12px 28px rgba(255, 23, 68, 0.45);
+            transform: translateY(-4px) scale(1.02);
+        }
+        button#calculateBtn:active:not(:disabled) {
+            transform: translateY(0) scale(1);
+            box-shadow: 0 5px 15px rgba(255, 23, 68, 0.3);
+        }
+        button#calculateBtn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            background: var(--disabled-color);
+            box-shadow: none;
+            transform: none;
+        }
+
+        .result-area {
+            margin-top: 40px;
+            padding: 30px 25px;
+            border-radius: 25px;
+            background-color: rgba(255, 255, 255, 0.8);
+            line-height: 1.8;
+            opacity: 0;
+            transform: translateY(30px) scale(0.9);
+            transition: opacity 0.7s cubic-bezier(0.165, 0.84, 0.44, 1), transform 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            min-height: 220px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        .result-area.show {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+
+        .result-area .names {
+            font-size: 1.3em;
+            font-weight: 700;
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+            word-wrap: break-word;
+            animation: popUp 0.5s ease-out 0.6s backwards;
+        }
+        .result-area .names strong { color: var(--primary-color); }
+
+        .result-area .percentage-container {
+             position: relative;
+             margin: 15px 0 20px 0;
+             animation: popUp 0.6s ease-out 0.8s backwards;
+        }
+
+        .result-area .percentage {
+            font-size: 5.5em;
+            font-weight: 700;
+            display: inline-block;
+            line-height: 1;
+            background: linear-gradient(120deg, var(--primary-color), var(--accent-color), var(--secondary-color));
+            background-size: 300% 300%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            position: relative;
+            z-index: 1;
+            animation: percentageFlow 5s ease infinite;
+        }
+        @keyframes percentageFlow {
+            0%{background-position:0% 50%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 50%}
+        }
+
+        .love-meter-container {
+            width: 100%;
+            margin: 15px 0;
+            animation: fadeIn 0.8s ease 0.5s both;
+        }
+
+        .love-meter-labels {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 5px;
+            font-size: 0.9em;
+            color: #5c677d;
+            font-weight: 600;
+        }
+
+        .love-meter {
+            width: 100%;
+            height: 20px;
+            background-color: var(--love-meter-bg);
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .love-meter-fill {
+            height: 100%;
+            border-radius: 10px;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            transition: width 1.5s ease-out;
+            width: 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .love-meter-fill::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(90deg, 
+                          rgba(255,255,255,0.1) 0%, 
+                          rgba(255,255,255,0.3) 50%, 
+                          rgba(255,255,255,0.1) 100%);
+            animation: shine 2s infinite;
+        }
+
+        @keyframes shine {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        .result-area .message {
+            font-size: 1.2em;
+            color: var(--text-color);
+            margin-top: 20px;
+            min-height: 60px;
+            padding: 0 15px;
+            font-weight: 400;
+            animation: fadeInText 0.8s ease 1s backwards;
+        }
+        .result-area .message strong { font-weight: 700; }
+        .result-area .error { color: var(--danger-color); font-weight: 600; }
+
+        @keyframes popUp {
+            0% { transform: scale(0.5); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        @keyframes fadeInText {
+            0% { opacity: 0; transform: translateY(10px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .loading-area {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            background-color: rgba(255, 255, 255, 0.85);
+            border-radius: 25px;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            z-index: 10;
+            pointer-events: none;
+            font-size: 1.3em;
+            color: var(--secondary-color);
+            font-weight: 600;
+        }
+        .loading-area.show {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .dual-ring-spinner {
+          display: inline-block;
+          width: 60px;
+          height: 60px;
+        }
+        .dual-ring-spinner:after {
+          content: " ";
+          display: block;
+          width: 48px;
+          height: 48px;
+          margin: 4px;
+          border-radius: 50%;
+          border: 5px solid var(--primary-color);
+          border-color: var(--primary-color) transparent var(--secondary-color) transparent;
+          animation: dual-ring-spin 1.2s linear infinite;
+        }
+        @keyframes dual-ring-spin {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+        }
+
+        #share-options {
+            margin-top: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 18px;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: opacity 0.6s ease 0.5s, transform 0.6s ease 0.5s;
+        }
+        #share-options.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        #share-options button {
+            background: var(--white-color);
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 1.5em;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 3px 8px var(--shadow-light);
+        }
+        #share-options button:hover {
+            background-color: var(--primary-color);
+            color: var(--white-color);
+            transform: translateY(-3px) scale(1.1);
+            box-shadow: 0 6px 15px rgba(255, 23, 68, 0.3);
+        }
+        #share-options button:active {
+             transform: translateY(0) scale(1);
+             box-shadow: 0 2px 5px var(--shadow-light);
+        }
+
+        #share-options button[title*="WhatsApp"]:hover { background-color: #25D366; border-color: #25D366; }
+        #share-options button[title*="কপি"]:hover { background-color: var(--info-color); border-color: var(--info-color); }
+
+         #historyToggleBtn {
+            position: absolute;
+            top: 25px;
+            right: 25px;
+            background: none;
+            border: none;
+            font-size: 2em;
+            color: var(--secondary-color);
+            cursor: pointer;
+            transition: transform 0.3s ease, color 0.3s ease;
+            z-index: 2;
+        }
+        #historyToggleBtn:hover {
+            transform: scale(1.2) rotate(15deg);
+            color: var(--primary-color);
+        }
+
+        #historyPanel {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 380px;
+            max-width: 95%;
+            height: 100%;
+            background-color: var(--white-color);
+            box-shadow: -15px 0 40px var(--shadow-dark);
+            padding: 30px;
+            padding-top: 80px;
+            overflow-y: auto;
+            transition: right 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+            z-index: 1000;
+            border-left: 2px solid var(--primary-color);
+        }
+        #historyPanel.show {
+            right: 0;
+        }
+        #historyPanel h2 {
+            color: var(--secondary-color);
+            margin-bottom: 25px;
+            text-align: center;
+            font-size: 1.8em;
+            font-weight: 700;
+            font-family: var(--font-heading);
+        }
+        #historyList {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 25px;
+        }
+        #historyList li {
+            background-color: #fdfdff;
+            border-radius: 12px;
+            padding: 15px 18px;
+            margin-bottom: 15px;
+            border: 1px solid #e8eaf6;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1em;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+         #historyList li:hover {
+             transform: translateX(-5px);
+             box-shadow: 5px 5px 15px var(--shadow-light);
+         }
+
+        #historyList .names {
+            font-weight: 600;
+            color: var(--text-color);
+            flex-grow: 1;
+            margin-right: 15px;
+            word-break: break-word;
+        }
+         #historyList .percentage {
+            font-weight: 700;
+            color: var(--primary-color);
+            font-size: 1.2em;
+            margin-left: 15px;
+            white-space: nowrap;
+         }
+         #historyList .timestamp {
+            font-size: 0.85em;
+            color: #78909c;
+            display: block;
+            margin-top: 4px;
+         }
+
+        #clearHistoryBtn, #closeHistoryBtn {
+            display: block;
+            width: 100%;
+            padding: 14px;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 1.1em;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-align: center;
+            margin-top: 15px;
+            border: none;
+        }
+        #clearHistoryBtn {
+             background-color: var(--danger-color);
+             color: var(--white-color);
+         }
+        #clearHistoryBtn:hover { background-color: #c62828; transform: scale(1.02); }
+
+        #closeHistoryBtn {
+             position: absolute;
+             top: 20px;
+             right: 20px;
+             background: none;
+             border: none;
+             font-size: 2.2em;
+             color: var(--disabled-color);
+             width: auto;
+             padding: 5px;
+         }
+         #closeHistoryBtn:hover { color: var(--primary-color); transform: rotate(90deg); }
+
+        #noHistoryMessage {
+             text-align: center;
+             color: #90a4ae;
+             margin-top: 40px;
+             font-style: italic;
+             font-size: 1.1em;
+        }
+
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(55, 71, 79, 0.9);
+            color: var(--white-color);
+            text-align: center;
+            padding: 12px 0;
+            font-size: 0.9em;
+            font-weight: 400;
+            z-index: 999;
+            backdrop-filter: blur(5px);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .footer a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        .footer a:hover {
+            color: var(--white-color);
+        }
+
+        #result.error-message .names,
+        #result.error-message .percentage-container {
+            display: none;
+        }
+        #result.error-message {
+            justify-content: center;
+            background-color: rgba(255, 235, 238, 0.9);
+        }
+        #result.error-message .message {
+            color: var(--danger-color);
+            font-weight: 700;
+            font-size: 1.2em;
+            text-align: center;
+            margin-top: 0;
+            animation: shake 0.5s ease-in-out;
+        }
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            10%, 30%, 50%, 70%, 90% { transform: translateX(-8px); }
+            20%, 40%, 60%, 80% { transform: translateX(8px); }
+        }
+
+        #particle-canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+        #result.show #particle-canvas {
+            opacity: 1;
+        }
+
+        .badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: linear-gradient(45deg, var(--gold-color), #ffc107);
+            color: #000;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-weight: bold;
+            font-size: 0.9em;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+            animation: badgePulse 2s infinite;
+            display: none;
+        }
+
+        @keyframes badgePulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .platinum-badge {
+            background: linear-gradient(45deg, var(--platinum-color), #c0c0c0);
+        }
+
+        .diamond-badge {
+            background: linear-gradient(45deg, var(--diamond-color), #00bcd4);
+            color: #000;
+        }
+
+        .gold-badge {
+            background: linear-gradient(45deg, var(--gold-color), #ffc107);
+        }
+
+        .love-emoji {
+            font-size: 1.5em;
+            margin: 0 5px;
+            animation: heartBeat 1.5s infinite;
+        }
+
+        @keyframes heartBeat {
+            0% { transform: scale(1); }
+            14% { transform: scale(1.3); }
+            28% { transform: scale(1); }
+            42% { transform: scale(1.3); }
+            70% { transform: scale(1); }
+        }
+
+        @media (max-width: 768px) {
+             h1 { font-size: 2.5em; }
+             .container { padding: 30px 25px; }
+             #historyPanel { width: 320px; }
+        }
+
+        @media (max-width: 480px) {
+            body { padding: 25px 10px 70px 10px; }
+            .container { padding: 25px 15px; border-radius: 25px;}
+            h1 { font-size: 2em; }
+            .subtitle { font-size: 1em; margin-bottom: 30px; }
+            .input-group input[type="text"] { padding: 16px 18px 16px 50px; font-size: 1.05em; border-radius: 15px;}
+            button#calculateBtn { padding: 16px 20px; font-size: 1.3em; border-radius: 15px;}
+            .result-area { min-height: 200px; padding: 20px 15px; border-radius: 20px;}
+            .result-area .percentage { font-size: 4em; }
+            .result-area .message { font-size: 1.1em; }
+            #share-options button { width: 45px; height: 45px; font-size: 1.3em; }
+            #historyPanel { width: 90%; }
+            .footer { font-size: 0.8em; padding: 10px 0;}
+            #historyToggleBtn { font-size: 1.8em; top: 20px; right: 15px;}
+            #closeHistoryBtn { font-size: 2em; top: 15px; right: 15px;}
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button id="historyToggleBtn" title="হিস্ট্রি দেখুন"><i class="fas fa-history"></i></button>
+        <h1><i class="fa-solid fa-heart-pulse fa-beat" style="--fa-animation-duration: 1.5s;"></i> আধুনিক লাভ ক্যালকুলেটর <i class="fa-solid fa-face-grin-squint-tears"></i></h1>
+        <p class="subtitle">আপনার ভালোবাসার শতকরা হার জানুন আমাদের স্মার্ট AI টেকনোলজি ব্যবহার করে!<br>শুধু দুইজনের নাম লিখে ক্লিক করুন "ভাগ্য পরীক্ষা করুন" বাটনে</p>
+
+        <form id="loveForm">
+            <div class="input-group">
+                <label for="name1">প্রথম ব্যক্তির নাম:</label>
+                <input type="text" id="name1" placeholder="যেমন: রহিম বা করিম" required>
+                <i class="fas fa-user-astronaut input-icon"></i>
+            </div>
+            <div class="input-group">
+                <label for="name2">দ্বিতীয় ব্যক্তির নাম:</label>
+                <input type="text" id="name2" placeholder="যেমন: সুরাইয়া বা জেবুন্নেছা" required>
+                 <i class="fas fa-heart-crack input-icon"></i>
+            </div>
+            <button type="button" id="calculateBtn"><i class="fas fa-rocket"></i> ভাগ্য পরীক্ষা করুন!</button>
+        </form>
+
+        <div id="loading" class="loading-area">
+            <div class="dual-ring-spinner"></div>
+            <span>AI মহাশয় ভবিষ্যৎবাণী করছেন... অপেক্ষা করুন! ⏳</span>
+        </div>
+
+        <div id="result" class="result-area">
+             <div class="badge" id="resultBadge"></div>
+             <canvas id="particle-canvas"></canvas>
+        </div>
+
+         <div id="share-options">
+         </div>
+    </div>
+
+    <div id="historyPanel">
+         <button id="closeHistoryBtn" title="বন্ধ করুন"><i class="fas fa-times-circle"></i></button>
+        <h2><i class="fas fa-scroll"></i> অতীতের প্রেমপত্র</h2>
+        <ul id="historyList"></ul>
+        <p id="noHistoryMessage" style="display: none;">এই প্রেমপত্রের খাতা এখনো খালি! 🤷‍♂️</p>
+        <button id="clearHistoryBtn"><i class="fas fa-fire"></i> সব পুড়িয়ে ফেলুন!</button>
+    </div>
+
+     <footer class="footer">
+        তৈরি করেছে <a href="#" target="_blank" rel="noopener noreferrer">RAHAT</a> | সর্বস্বত্ব সংরক্ষিত &copy; 2025
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // --- Element Selection ---
+            const loveForm = document.getElementById('loveForm');
+            const name1Input = document.getElementById('name1');
+            const name2Input = document.getElementById('name2');
+            const resultDiv = document.getElementById('result');
+            const loadingDiv = document.getElementById('loading');
+            const calculateBtn = document.getElementById('calculateBtn');
+            const historyToggleBtn = document.getElementById('historyToggleBtn');
+            const historyPanel = document.getElementById('historyPanel');
+            const closeHistoryBtn = document.getElementById('closeHistoryBtn');
+            const historyList = document.getElementById('historyList');
+            const clearHistoryBtn = document.getElementById('clearHistoryBtn');
+            const noHistoryMessage = document.getElementById('noHistoryMessage');
+            const shareOptionsDiv = document.getElementById('share-options');
+            const particleCanvas = document.getElementById('particle-canvas');
+            const particleCtx = particleCanvas.getContext('2d');
+            const resultBadge = document.getElementById('resultBadge');
+            
+            let loveHistory = [];
+            let currentResult = null;
+            let particles = [];
+            let animationFrameId = null;
+
+            // --- Initialize Particle Canvas ---
+            function initParticleCanvas() {
+                const resultArea = document.getElementById('result');
+                particleCanvas.width = resultArea.offsetWidth;
+                particleCanvas.height = resultArea.offsetHeight;
+            }
+
+            // --- Particle System ---
+            function createParticle(x, y, color) {
+                const angle = Math.random() * Math.PI * 2;
+                const speed = Math.random() * 4 + 2;
+                const size = Math.random() * 5 + 3;
+                const decay = 0.015 + Math.random() * 0.01;
+                const gravity = 0.05;
+
+                return {
+                    x: x,
+                    y: y,
+                    vx: Math.cos(angle) * speed,
+                    vy: Math.sin(angle) * speed - 2,
+                    size: size,
+                    color: color,
+                    opacity: 1,
+                    decay: decay,
+                    gravity: gravity
+                };
+            }
+
+            function updateAndDrawParticles() {
+                if (!particleCtx || particles.length === 0) {
+                    cancelAnimationFrame(animationFrameId);
+                    return;
+                }
+
+                particleCtx.clearRect(0, 0, particleCanvas.width, particleCanvas.height);
+
+                for (let i = particles.length - 1; i >= 0; i--) {
+                    const p = particles[i];
+
+                    p.vy += p.gravity;
+                    p.x += p.vx;
+                    p.y += p.vy;
+                    p.opacity -= p.decay;
+
+                    if (p.opacity <= 0) {
+                        particles.splice(i, 1);
+                    } else {
+                        particleCtx.globalAlpha = p.opacity;
+                        particleCtx.fillStyle = p.color;
+                        particleCtx.beginPath();
+                        particleCtx.arc(p.x, p.y, p.size / 2, 0, Math.PI * 2);
+                        particleCtx.fill();
+                    }
+                }
+
+                animationFrameId = requestAnimationFrame(updateAndDrawParticles);
+            }
+
+            function triggerParticleBurst(count, color) {
+                initParticleCanvas();
+                const centerX = particleCanvas.width / 2;
+                const centerY = particleCanvas.height * 0.3;
+                
+                for (let i = 0; i < count; i++) {
+                    particles.push(createParticle(centerX, centerY, color));
+                }
+                
+                if (particles.length > 0 && !animationFrameId) {
+                    animationFrameId = requestAnimationFrame(updateAndDrawParticles);
+                }
+            }
+
+            // --- History Management ---
+            function loadHistory() {
+                const storedHistory = localStorage.getItem('loveCalculatorHistory_v5');
+                loveHistory = storedHistory ? JSON.parse(storedHistory) : [];
+                displayHistory();
+            }
+
+            function saveHistory() {
+                if (loveHistory.length > 20) {
+                    loveHistory = loveHistory.slice(loveHistory.length - 20);
+                }
+                localStorage.setItem('loveCalculatorHistory_v5', JSON.stringify(loveHistory));
+                displayHistory();
+            }
+
+            function addHistoryEntry(name1, name2, percentage) {
+                const timestamp = new Date();
+                const newEntry = {
+                    id: Date.now(),
+                    name1,
+                    name2,
+                    percentage,
+                    timestamp: timestamp.toLocaleString('bn-BD', { 
+                        day: 'numeric', 
+                        month: 'short', 
+                        year: 'numeric', 
+                        hour: 'numeric', 
+                        minute: '2-digit', 
+                        hour12: true 
+                    })
+                };
+                
+                if (loveHistory.length === 0 || 
+                    loveHistory[loveHistory.length-1].name1 !== name1 || 
+                    loveHistory[loveHistory.length-1].name2 !== name2 || 
+                    loveHistory[loveHistory.length-1].percentage !== percentage) {
+                    loveHistory.push(newEntry);
+                    saveHistory();
+                }
+            }
+
+            function displayHistory() {
+                historyList.innerHTML = '';
+                if (loveHistory.length === 0) {
+                    noHistoryMessage.style.display = 'block';
+                    clearHistoryBtn.style.display = 'none';
+                } else {
+                    noHistoryMessage.style.display = 'none';
+                    clearHistoryBtn.style.display = 'block';
+                    loveHistory.slice().reverse().forEach(entry => {
+                        const li = document.createElement('li');
+                        li.innerHTML = `
+                            <div class="history-details">
+                                <span class="names">${entry.name1} <i class="fas fa-plus" style="font-size: 0.7em; color: #aaa;"></i> ${entry.name2}</span>
+                                <span class="timestamp">${entry.timestamp}</span>
+                            </div>
+                            <span class="percentage" style="color: ${getFunnyResultMessage(entry.percentage).color};">${entry.percentage}%</span>
+                        `;
+                        historyList.appendChild(li);
+                    });
+                }
+            }
+
+            function clearHistory() {
+                if (confirm('সত্যিই সব স্মৃতি মুছে ফেলবেন? পরে কিন্তু আফসোস করবেন না! 😉')) {
+                    loveHistory = [];
+                    localStorage.removeItem('loveCalculatorHistory_v5');
+                    displayHistory();
+                }
+            }
+
+            // --- Love Calculation Logic ---
+            function calculateLove(n1, n2) {
+                // First check for funny names
+                const funnyResponses = checkForFunnyNames(n1, n2);
+                if (funnyResponses) return funnyResponses;
+                
+                const name1Lower = n1.toLowerCase().trim();
+                const name2Lower = n2.toLowerCase().trim();
+                let combined = name1Lower + "💞" + name2Lower;
+                
+                if (name1Lower > name2Lower) {
+                    combined = name2Lower + "💞" + name1Lower;
+                }
+
+                let hash = 0;
+                for (let i = 0; i < combined.length; i++) {
+                    const char = combined.charCodeAt(i);
+                    hash = ((hash << 5) - hash) + char + (i * 7);
+                    hash |= 0;
+                }
+
+                return (Math.abs(hash) % 100) + 1;
+            }
+
+            // Check for funny/nonsense names
+            function checkForFunnyNames(name1, name2) {
+                const funnyNamePatterns = [
+                    { pattern: /[ররলদগগরদথণছ]/g, response: 5, message: "এই নাম আবার কী? 😂 কি-বোর্ডে হাত পড়েছে নাকি? 😆" },
+                    { pattern: /[১২৩৪৫৬৭৮৯০]/g, response: 10, message: "নামে সংখ্যা কেন? 😂 লটারি নম্বর চেক করছেন নাকি? 🎰" },
+                    { pattern: /(.)\1{4,}/g, response: 15, message: "এই নামটা কি কিবোর্ডে ঘুমিয়ে পড়ার পর লেখা? 😴 এত একই অক্ষর কেন? 🤣" },
+                    { pattern: /^.{1}$/g, response: 20, message: "একটা অক্ষরের নাম? 😳 এটা তো নামের প্রথম অক্ষরও না! 🤭" },
+                    { pattern: /[^a-zA-Z\u0980-\u09FF\s]/g, response: 25, message: "এই নামে তো বাংলা/ইংরেজি ছাড়া আর সব আছে! 🌍 বিশ্বনাগরিক নাকি? 😎" }
+                ];
+
+                for (const item of funnyNamePatterns) {
+                    if (item.pattern.test(name1) || item.pattern.test(name2)) {
+                        return { percentage: item.response, message: item.message };
+                    }
+                }
+
+                // Check for special funny cases
+                const specialCases = [
+                    { names: ["আমি", "তুমি"], response: 99, message: "আমি আর তুমি? 😍 এটা তো ক্লাসিক জুটি! বলিউডের গান মনে পড়ে গেল! 🎶" },
+                    { names: ["ভালোবাসা", "ঘৃণা"], response: 50, message: "ভালোবাসা আর ঘৃণা? 😱 একসাথে? এটা তো সাসপেন্স থ্রিলার! 🎬" },
+                    { names: ["বাবা", "মা"], response: 100, message: "বাবা-মা? ❤️ এঁরা তো পৃথিবীর সেরা জুটি! প্রণাম জানাই! 🙏" },
+                    { names: ["বাংলাদেশ", "ভারত"], response: 75, message: "দেশের নাম? 🇧🇩❤️🇮🇳 এটা তো আন্তর্জাতিক প্রেম! 🌏" }
+                ];
+
+                for (const caseItem of specialCases) {
+                    if ((name1.toLowerCase().includes(caseItem.names[0]) && 
+                         name2.toLowerCase().includes(caseItem.names[1])) || 
+                        (name2.toLowerCase().includes(caseItem.names[0]) && 
+                         name1.toLowerCase().includes(caseItem.names[1]))) {
+                        return { percentage: caseItem.response, message: caseItem.message };
+                    }
+                }
+
+                return null;
+            }
+
+            // --- Animation Functions ---
+            function animateCounter(element, finalValue, duration = 1500) {
+                let startValue = 0;
+                const startTime = performance.now();
+
+                function update(currentTime) {
+                    const elapsedTime = currentTime - startTime;
+                    const progress = Math.min(1, elapsedTime / duration);
+                    const currentValue = Math.floor(progress * (finalValue - startValue) + startValue);
+
+                    element.textContent = `${currentValue}%`;
+
+                    if (progress < 1) {
+                        requestAnimationFrame(update);
+                    } else {
+                        element.textContent = `${finalValue}%`;
+                    }
+                }
+                requestAnimationFrame(update);
+            }
+
+            // --- Result Messages ---
+            function getFunnyResultMessage(percentage, name1 = "নাম১", name2 = "নাম২") {
+                let message = "";
+                let color = "var(--primary-color)";
+                let badge = "";
+
+                // Special cases first
+                if (percentage === 69) {
+                    message = `😏 ৬৯%! হুমম... এই সংখ্যাটা তো বিশেষ কিছু! ${name1} আর ${name2}, আপনারা কি কিছু ইঙ্গিত করছেন? 😉 যাই হোক, বিজ্ঞানী AI কিছুই বুঝতে পারলো না! 😇`;
+                    color = "#9c27b0";
+                    badge = "😏 বিশেষ সংখ্যা";
+                } 
+                else if (percentage === 42) {
+                    message = `🤓 ৪২%! এটা তো জীবন, মহাবিশ্ব ও সবকিছুর উত্তর! ${name1} আর ${name2}, আপনারা কি হিচহাইকার্স গাইড টু দ্য গ্যালাক্সি ফ্যান? 🌌`;
+                    color = "#00bcd4";
+                    badge = "🤓 গ্যালাক্সি উত্তর";
+                }
+                else switch (true) {
+                    case (percentage === 100):
+                        message = `🥳💯 ওরে বাবা! ১০০%!! এটা কি মানুষ নাকি ম্যাগনেট? ${name1} আর ${name2}, আপনারা তো দেখছি একে অপরের জন্য পারফেক্ট কপি-পেস্ট! এখনই কাজিকে ডাকুন! 💍 নাকি চাঁদে হানিমুনে যাবেন? 🚀`;
+                        color = "var(--gold-color)";
+                        badge = "💎 ডায়মন্ড জুটি";
+                        break;
+                    case (percentage >= 98):
+                        message = `🤩 ৯৮-৯৯%! প্রায় পারফেক্ট! ${name1} + ${name2} = যেন বিরিয়ানির সাথে বোরহানি! 🔥 শুধু ছোট্ট একটা ঝগড়া মিসিং! 😉 যান, এখনই ফেসবুকে রিলেশনশিপ স্ট্যাটাস পাল্টান! #CoupleGoals`;
+                        color = "var(--platinum-color)";
+                        badge = "🌟 প্লাটিনাম জুটি";
+                        break;
+                    case (percentage >= 96):
+                        message = `😍 ৯৬-৯৭%! ওয়াও! ${name1} আর ${name2} এর ভালোবাসা দেখে তো চাঁদও লজ্জা পাবে! 🌝 আপনাদের জন্য শুধু একটাই পরামর্শ - বিয়ের আগে কখনো একসাথে শপিংয়ে যাবেন না! 🛍️`;
+                        color = "var(--gold-color)";
+                        badge = "🥇 গোল্ড জুটি";
+                        break;
+                    case (percentage >= 90):
+                        message = `🥰 ৯০-৯৫%! বেশ সিরিয়াস мামला! ${name1} আর ${name2} এর জুটি হিট! 👍 মনে হচ্ছে আপনারা দুজনে মিলে একটা সুখী সিরিয়াল বানাতে পারবেন! ঝগড়া কম, ভালোবাসা বেশি! 💕`;
+                        color = "#ff5722";
+                        badge = "🏆 চ্যাম্পিয়ন";
+                        break;
+                    case (percentage >= 86):
+                        message = `😊 ৮৬-৮৯%! বাহ্! ভালোই চলছে আপনাদের প্রেম এক্সপ্রেস! 🚂 মাঝে মাঝে একটু থামে, কিন্তু ঠিকই এগিয়ে যায়! ${Math.random() > 0.5 ? name1 : name2}, সঙ্গীকে নিয়ে একটু ঘুরতে যান, পার্সেন্টেজ আরও বাড়বে! 😉`;
+                        color = "var(--secondary-color)";
+                        badge = "🎯 টার্গেট হিট";
+                        break;
+                    case (percentage >= 80):
+                        message = `😘 ৮০-৮৫%! বেশ ভালো! ${name1} আর ${name2}, আপনারা তো দেখছি রোমান্টিক মুভির সেরা জুটি! 🎬 শুধু একটু পরামর্শ - রোজ গালে একটা চুমু দিলে পার্সেন্টেজ ৯০% ছাড়াবে! 💋`;
+                        color = "#4caf50";
+                        badge = "💖 রোমান্টিক";
+                        break;
+                    case (percentage >= 76):
+                        message = `😉 ৭৬-৭৯%! ভালোই তো! ${name1} আর ${name2}, আপনাদের সম্পর্কটা যেন নতুন ফোনের ব্যাটারি - প্রথমে ফুল চার্জ, তারপর ধীরে ধীরে কমে! 🔋 চার্জ দিতে থাকুন!`;
+                        color = "#2196f3";
+                        badge = "⚡ চার্জড";
+                        break;
+                    case (percentage >= 71):
+                        message = `🙂 ৭১-৭৫%! চলছে ভালো! ${name1} আর ${name2}, আপনাদের সম্পর্কটা যেন হালকা ঝালের চাটনি - বেশি হলে জ্বালাবে, কম হলে মজা নেই! 🌶️ ব্যালেন্স ঠিক রাখুন!`;
+                        color = "#673ab7";
+                        badge = "⚖️ ব্যালেন্সড";
+                        break;
+                    case (percentage >= 66):
+                        message = `🤔 ৬৬-৭০%! হুমম... ব্যাপারটা ৫০-৫০ এর উপরে! মানে, টস করলে ভালোবাসার দিকেই পড়ার চান্স বেশি! 🪙 ${name1}, ${name2} কে আইসক্রিম খাওয়ালে সম্পর্কটা জমে ক্ষীর হয়ে যেতে পারে! 🍦`;
+                        color = "var(--info-color)";
+                        badge = "🤞 আশাবাদী";
+                        break;
+                    case (percentage >= 61):
+                        message = `😐 ৬১-৬৫%! ওকে... মানে... চলছে! ${name1} আর ${name2}, আপনাদের সম্পর্কটা যেন অফিসের এসি - কখনও ঠাণ্ডা, কখনও গরম! ❄️🔥 সময় দিয়ে দেখুন, হয়তো ভালো হবে!`;
+                        color = "#607d8b";
+                        badge = "❄️ ঠাণ্ডা-গরম";
+                        break;
+                    case (percentage >= 56):
+                        message = `😅 ৫৬-৬০%! আরে! এ তো দেখি জোর কা ঝাটকা ধীরে সে লাগে অবস্থা! ⚡️ ভালোবাসা আছে, তবে একটু নড়বড়ে! ${name1} আর ${name2}, আপনারা কি বন্ধু নাকি তার চেয়ে একটু বেশি? 🤔 কনফিউশন কাটান মশাই!`;
+                        color = "#757575";
+                        badge = "🤨 কনফিউজড";
+                        break;
+                    case (percentage >= 51):
+                        message = `😬 ৫১-৫৫%! উফ... টানটান অবস্থা! ${name1} আর ${name2}, আপনাদের সম্পর্কটা যেন টাইটরোপে হাঁটা - একদম ব্যালেন্স করে চলতে হবে! 🤹 একটু এদিক-ওদিক হলেই... ব্যাস!`;
+                        color = "#ff9800";
+                        badge = "🎪 টাইটরোপ";
+                        break;
+                    case (percentage >= 46):
+                        message = `😕 ৪৬-৫০%! ইশশ... টস আপ! ${name1} আর ${name2}, আপনাদের সম্পর্কটা যেন রিকশার টায়ার - কখন ফুটো হয়ে যাবে কিছু বলা যায় না! 🚲 বেশি দূর যাওয়ার আগে মেরামত করে নিন!`;
+                        color = "#ff5722";
+                        badge = "⚠️ সতর্কতা";
+                        break;
+                    case (percentage >= 41):
+                        message = `😟 ৪১-৪৫%! পার্সেন্টেজ তো দেখি ডায়েটিং করছে! 🤣 ${name1}, ${name2} কে কি শুধু হাই-হ্যালো বলার জন্য রেখেছেন? 😂 সম্পর্কটা সিরিয়াস করতে হলে অনেক কাঠখড় পোড়াতে হবে! 🔥`;
+                        color = "var(--warning-color)";
+                        badge = "🔥 প্রচেষ্টা চাই";
+                        break;
+                    case (percentage >= 36):
+                        message = `😨 ৩৬-৪০%! ওহ নো! ${name1} আর ${name2}, আপনাদের সম্পর্কটা যেন নেটওয়ার্কের সিগন্যাল - কখনও আসে, কখনও যায়! 📶 একটু স্থায়ী কিছু ভাবুন!`;
+                        color = "#f44336";
+                        badge = "📶 আনস্টেবল";
+                        break;
+                    case (percentage >= 31):
+                        message = `😰 ৩১-৩৫%! হায় হায়! ${name1} আর ${name2}, আপনাদের সম্পর্কটা যেন ভ্যাপসা গরমের ফ্যান - ঠাণ্ডা তো করে না, আবার শব্দও করে বিরক্ত করে! 🌬️ নতুন কিছু ট্রাই করুন!`;
+                        color = "#e91e63";
+                        badge = "💢 বিরক্তিকর";
+                        break;
+                    case (percentage >= 26):
+                        message = `😱 ২৬-৩০%! ভয়ংকর! ${name1} আর ${name2}, আপনাদের সম্পর্কটা যেন ভূতের বাচ্চা - কেউ বিশ্বাস করে না, আবার আপনারা ছাড়তেও পারছেন না! 👻 সময় এসেছে সিদ্ধান্ত নেওয়ার!`;
+                        color = "#9c27b0";
+                        badge = "👻 ভূতের বাচ্চা";
+                        break;
+                    case (percentage >= 21):
+                        message = `🤢 ২১-২৫%! ইয়াক! ${name1} আর ${name2}, আপনাদের সম্পর্কটা যেন পচা ডিমের সালাদ - দেখতে সুন্দর, কিন্তু গন্ধে সব শেষ! 🥚 দয়া করে কাউকে কষ্ট দেবেন না!`;
+                        color = "#795548";
+                        badge = "🤮 পচা ডিম";
+                        break;
+                    case (percentage >= 16):
+                        message = `🤯 ১৬-২০%! ওহ নো! এটা কি ভালোবাসা নাকি ভুল নাম্বার? ☎️ ${name1} আর ${name2}, আপনাদের মধ্যে মিলের চেয়ে অমিলই বেশি মনে হচ্ছে! 🤷‍♂️ আপনারা কি নিশ্চিত যে একে অপরকে চেনেন?`;
+                        color = "#ef5350";
+                        badge = "❌ ভুল জুটি";
+                        break;
+                    case (percentage >= 11):
+                        message = `😵 ১১-১৫%! হায় আল্লাহ! ${name1} আর ${name2}, আপনাদের সম্পর্কটা যেন টুথপেস্টে কমলালেবুর রস - একদমই ম্যাচ করে না! 🍊🚫 এটা নিয়ে ভাবারই দরকার নেই!`;
+                        color = "#d32f2f";
+                        badge = "🚫 নো-গো";
+                        break;
+                    case (percentage >= 6):
+                        message = `💀 ৬-১০%! মৃত অবস্থা! ${name1} আর ${name2}, আপনাদের সম্পর্কটা যেন মরুভূমিতে ছাতা - একদমই অপ্রয়োজনীয়! ☀️🌂 নতুন করে ভাবুন জীবনটা!`;
+                        color = "#b71c1c";
+                        badge = "⚰️ মৃত";
+                        break;
+                    default:
+                        message = `🤣 ১-৫%! হা হা হা! এটা কি লাভ ক্যালকুলেটর নাকি কমেডি শো? 😂 ${name1} + ${name2} = যেন তেল আর জল! 💧 প্লিজ ঝগড়া করে ক্যালকুলেটরটা ভাঙবেন না! 🙏 বন্ধুত্বই সই! 🤝`;
+                        color = "var(--danger-color)";
+                        badge = "😂 কমেডি";
+                        break;
+                }
+                
+                const funnySuffixes = [
+                    "সাবধান!", "হেসে নিন!", "ভাবুন একবার!", 
+                    "AI ও অবাক!", "কপাল বটে!", "ব্যাপারখানা কি?", 
+                    "চলুক তবে!", "হাসতে হাসতে পেটে খিল!", 
+                    "এবার ভাবুন তো!", "কী বলেন?", "হুঁহুঁ...!", 
+                    "এটা কী দেখলাম!", "হালকা চালে নিন!", "মজাটা কই?"
+                ];
+                message += " " + funnySuffixes[Math.floor(Math.random() * funnySuffixes.length)];
+
+                return { message, color, badge };
+            }
+
+            // --- Display Results ---
+            function displayResult(name1, name2, percentage) {
+                const resultData = getFunnyResultMessage(percentage, name1, name2);
+                currentResult = { name1, name2, percentage, message: resultData.message, color: resultData.color };
+
+                // Clear previous result but keep canvas
+                resultDiv.innerHTML = '';
+                const newCanvas = document.createElement('canvas');
+                newCanvas.id = 'particle-canvas';
+                resultDiv.appendChild(newCanvas);
+                
+                // Reinitialize canvas context
+                const newParticleCanvas = document.getElementById('particle-canvas');
+                const newParticleCtx = newParticleCanvas.getContext('2d');
+                particles = [];
+                
+                // Create result elements
+                const namesP = document.createElement('p');
+                namesP.className = 'names';
+                namesP.innerHTML = `<strong>${name1}</strong> <i class="fas fa-heartbeat" style="color: ${resultData.color};"></i> <strong>${name2}</strong>`;
+                resultDiv.appendChild(namesP);
+
+                const percentageContainer = document.createElement('div');
+                percentageContainer.className = 'percentage-container';
+                const percentageSpan = document.createElement('span');
+                percentageSpan.className = 'percentage';
+                percentageSpan.id = 'percentageCounter';
+                percentageSpan.textContent = '0%';
+                percentageContainer.appendChild(percentageSpan);
+                resultDiv.appendChild(percentageContainer);
+
+                // Add love meter
+                const loveMeterContainer = document.createElement('div');
+                loveMeterContainer.className = 'love-meter-container';
+                
+                const loveMeterLabels = document.createElement('div');
+                loveMeterLabels.className = 'love-meter-labels';
+                loveMeterLabels.innerHTML = '<span>০%</span><span>১০০%</span>';
+                
+                const loveMeter = document.createElement('div');
+                loveMeter.className = 'love-meter';
+                const loveMeterFill = document.createElement('div');
+                loveMeterFill.className = 'love-meter-fill';
+                loveMeterFill.style.width = '0%';
+                loveMeter.appendChild(loveMeterFill);
+                
+                loveMeterContainer.appendChild(loveMeterLabels);
+                loveMeterContainer.appendChild(loveMeter);
+                resultDiv.appendChild(loveMeterContainer);
+
+                const messageP = document.createElement('p');
+                messageP.className = 'message';
+                messageP.innerHTML = resultData.message;
+                resultDiv.appendChild(messageP);
+
+                // Add badge if available
+                if (resultData.badge) {
+                    const badgeDiv = document.createElement('div');
+                    badgeDiv.className = 'badge';
+                    badgeDiv.style.display = 'block'; // Make sure badge is visible
+                    if (percentage >= 96) badgeDiv.classList.add('diamond-badge');
+                    else if (percentage >= 90) badgeDiv.classList.add('platinum-badge');
+                    else if (percentage >= 80) badgeDiv.classList.add('gold-badge');
+                    badgeDiv.textContent = resultData.badge;
+                    resultDiv.appendChild(badgeDiv);
+                }
+
+                // Apply dynamic styles
+                percentageSpan.style.backgroundImage = `linear-gradient(120deg, ${resultData.color}, var(--accent-color), ${resultData.color === 'gold' ? '#ffeb3b' : 'var(--secondary-color)'})`;
+                percentageSpan.style.backgroundSize = '300% 300%';
+                percentageSpan.style.animation = 'percentageFlow 5s ease infinite';
+                loveMeterFill.style.background = `linear-gradient(90deg, ${resultData.color}, ${resultData.color === 'var(--gold-color)' ? '#ffc107' : resultData.color})`;
+
+                // Show result
+                resultDiv.className = 'result-area show';
+                animateCounter(percentageSpan, percentage);
+                
+                // Animate love meter
+                setTimeout(() => {
+                    loveMeterFill.style.width = `${percentage}%`;
+                }, 500);
+
+                // Generate share options
+                generateShareOptions();
+                shareOptionsDiv.classList.add('show');
+
+                // Add to history
+                addHistoryEntry(name1, name2, percentage);
+
+                // Trigger particles based on score
+                let particleCount = 0;
+                let particleColor = resultData.color;
+                
+                if (percentage === 100) {
+                    particleCount = 200;
+                    particleColor = 'var(--gold-color)';
+                }
+                else if (percentage >= 90) {
+                    particleCount = 100;
+                    particleColor = 'var(--platinum-color)';
+                }
+                else if (percentage >= 80) {
+                    particleCount = 60;
+                    particleColor = 'var(--gold-color)';
+                }
+                else if (percentage >= 70) particleCount = 40;
+                else if (percentage >= 50) particleCount = 20;
+
+                if (particleCount > 0) {
+                    triggerParticleBurst(particleCount, particleColor);
+                }
+            }
+
+            // --- Share Options ---
+            function generateShareOptions() {
+                if (!currentResult) return;
+                const { name1, name2, percentage, message } = currentResult;
+                const shortMessage = message.split('.')[0] || message.split('!')[0];
+                const textToShare = `🔥 ${name1} ❤️ ${name2} = ${percentage}%! 🤣 লাভ ক্যালকুলেটর বলছে: "${shortMessage}..." ➡️`;
+                const urlToShare = window.location.href;
+
+                shareOptionsDiv.innerHTML = '';
+
+                // Web Share API
+                if (navigator.share) {
+                    const shareBtn = document.createElement('button');
+                    shareBtn.innerHTML = '<i class="fas fa-share-alt"></i>';
+                    shareBtn.title = 'শেয়ার করুন (সব অপশন)';
+                    shareBtn.onclick = () => {
+                        navigator.share({
+                            title: `লাভ ক্যালকুলেটর: ${name1} + ${name2}`,
+                            text: textToShare,
+                            url: urlToShare,
+                        }).catch((error) => console.log('শেয়ার করতে সমস্যা:', error));
+                    };
+                    shareOptionsDiv.appendChild(shareBtn);
+                }
+
+                // WhatsApp Share
+                const whatsappBtn = document.createElement('button');
+                whatsappBtn.innerHTML = '<i class="fab fa-whatsapp"></i>';
+                whatsappBtn.title = 'WhatsApp-এ শেয়ার';
+                whatsappBtn.onclick = () => {
+                    window.open(`https://api.whatsapp.com/send?text=${encodeURIComponent(textToShare + ' ' + urlToShare)}`, '_blank');
+                };
+                shareOptionsDiv.appendChild(whatsappBtn);
+
+                // Facebook Share
+                const facebookBtn = document.createElement('button');
+                facebookBtn.innerHTML = '<i class="fab fa-facebook"></i>';
+                facebookBtn.title = 'Facebook-এ শেয়ার';
+                facebookBtn.onclick = () => {
+                    window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(urlToShare)}&quote=${encodeURIComponent(textToShare)}`, '_blank');
+                };
+                shareOptionsDiv.appendChild(facebookBtn);
+
+                // Twitter Share
+                const twitterBtn = document.createElement('button');
+                twitterBtn.innerHTML = '<i class="fab fa-twitter"></i>';
+                twitterBtn.title = 'Twitter-এ শেয়ার';
+                twitterBtn.onclick = () => {
+                    window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(textToShare)}&url=${encodeURIComponent(urlToShare)}`, '_blank');
+                };
+                shareOptionsDiv.appendChild(twitterBtn);
+
+                // Copy Link Button
+                const copyLinkBtn = document.createElement('button');
+                copyLinkBtn.innerHTML = '<i class="fas fa-link"></i>';
+                copyLinkBtn.title = 'অ্যাপের লিঙ্ক কপি করুন';
+                copyLinkBtn.onclick = () => copyToClipboard(urlToShare, 'অ্যাপের লিঙ্ক কপি করা হয়েছে!');
+                shareOptionsDiv.appendChild(copyLinkBtn);
+
+                // Copy Result Text Button
+                const copyTextBtn = document.createElement('button');
+                copyTextBtn.innerHTML = '<i class="fas fa-copy"></i>';
+                copyTextBtn.title = 'ফলাফলের টেক্সট কপি করুন';
+                copyTextBtn.onclick = () => copyToClipboard(textToShare + ' ' + urlToShare, 'ফলাফল কপি করা হয়েছে!');
+                shareOptionsDiv.appendChild(copyTextBtn);
+            }
+
+            function copyToClipboard(text, successMessage) {
+                navigator.clipboard.writeText(text).then(() => {
+                    alert(successMessage);
+                }).catch(err => {
+                    console.error('কপি করতে সমস্যা:', err);
+                    alert('দুঃখিত, কপি করা যায়নি!');
+                });
+            }
+
+            // --- Event Listeners ---
+            calculateBtn.addEventListener('click', (event) => {
+                event.preventDefault();
+                const name1 = name1Input.value.trim();
+                const name2 = name2Input.value.trim();
+
+                let errorMessage = '';
+                if (name1 === '' || name2 === '') {
+                    errorMessage = 'ও মশাই! দুটো নাম না দিলে কিসের ক্যালকুলেশন? 🤔 দুটো নামই দিন!';
+                } else if (name1.length < 2 || name2.length < 2) {
+                    errorMessage = 'নামগুলো বড্ড ছোট! 🤏 একটু ভালো করে পুরো নামটা লিখুন দেখি!';
+                } else if (name1.toLowerCase() === name2.toLowerCase()) {
+                    errorMessage = 'এই যাহ! নিজের সাথেই প্রেম? 😂 এটা কেমন কথা! দুটো আলাদা নাম চাই!';
+                }
+
+                // Reset UI
+                resultDiv.classList.remove('show', 'error-message');
+                shareOptionsDiv.classList.remove('show');
+                loadingDiv.classList.remove('show');
+                particles = [];
+                if (animationFrameId) {
+                    cancelAnimationFrame(animationFrameId);
+                    animationFrameId = null;
+                }
+
+                if (errorMessage) {
+                    resultDiv.innerHTML = `<p class="message error">${errorMessage}</p>`;
+                    resultDiv.className = 'result-area show error-message';
+                    return;
+                }
+
+                // Start calculation
+                calculateBtn.disabled = true;
+                calculateBtn.innerHTML = '<i class="fas fa-sync fa-spin"></i> গণনা চলছে...';
+                loadingDiv.classList.add('show');
+
+                const delay = Math.random() * 800 + 700;
+                setTimeout(() => {
+                    const funnyResponse = checkForFunnyNames(name1, name2);
+                    let lovePercentage;
+                    
+                    if (funnyResponse) {
+                        lovePercentage = funnyResponse.percentage;
+                        // For funny responses, we'll use their custom message
+                        const resultData = {
+                            message: funnyResponse.message,
+                            color: getFunnyResultMessage(lovePercentage).color,
+                            badge: "😂 ফানি নাম"
+                        };
+                        
+                        loadingDiv.classList.remove('show');
+                        displayCustomResult(name1, name2, lovePercentage, resultData);
+                    } else {
+                        lovePercentage = calculateLove(name1, name2);
+                        loadingDiv.classList.remove('show');
+                        displayResult(name1, name2, lovePercentage);
+                    }
+
+                    calculateBtn.disabled = false;
+                    calculateBtn.innerHTML = '<i class="fas fa-rocket"></i> আবার চেষ্টা করুন!';
+                }, delay);
+            });
+
+            function displayCustomResult(name1, name2, percentage, resultData) {
+                currentResult = { name1, name2, percentage, message: resultData.message, color: resultData.color };
+
+                // Clear previous result but keep canvas
+                resultDiv.innerHTML = '';
+                const newCanvas = document.createElement('canvas');
+                newCanvas.id = 'particle-canvas';
+                resultDiv.appendChild(newCanvas);
+                
+                // Reinitialize canvas context
+                const newParticleCanvas = document.getElementById('particle-canvas');
+                const newParticleCtx = newParticleCanvas.getContext('2d');
+                particles = [];
+                
+                // Create result elements
+                const namesP = document.createElement('p');
+                namesP.className = 'names';
+                namesP.innerHTML = `<strong>${name1}</strong> <i class="fas fa-heartbeat" style="color: ${resultData.color};"></i> <strong>${name2}</strong>`;
+                resultDiv.appendChild(namesP);
+
+                const percentageContainer = document.createElement('div');
+                percentageContainer.className = 'percentage-container';
+                const percentageSpan = document.createElement('span');
+                percentageSpan.className = 'percentage';
+                percentageSpan.id = 'percentageCounter';
+                percentageSpan.textContent = `${percentage}%`;
+                percentageContainer.appendChild(percentageSpan);
+                resultDiv.appendChild(percentageContainer);
+
+                // Add love meter
+                const loveMeterContainer = document.createElement('div');
+                loveMeterContainer.className = 'love-meter-container';
+                
+                const loveMeterLabels = document.createElement('div');
+                loveMeterLabels.className = 'love-meter-labels';
+                loveMeterLabels.innerHTML = '<span>০%</span><span>১০০%</span>';
+                
+                const loveMeter = document.createElement('div');
+                loveMeter.className = 'love-meter';
+                const loveMeterFill = document.createElement('div');
+                loveMeterFill.className = 'love-meter-fill';
+                loveMeterFill.style.width = `${percentage}%`;
+                loveMeter.appendChild(loveMeterFill);
+                
+                loveMeterContainer.appendChild(loveMeterLabels);
+                loveMeterContainer.appendChild(loveMeter);
+                resultDiv.appendChild(loveMeterContainer);
+
+                const messageP = document.createElement('p');
+                messageP.className = 'message';
+                messageP.innerHTML = resultData.message;
+                resultDiv.appendChild(messageP);
+
+                // Add badge if available
+                if (resultData.badge) {
+                    const badgeDiv = document.createElement('div');
+                    badgeDiv.className = 'badge';
+                    badgeDiv.style.display = 'block'; // Ensure badge is visible
+                    badgeDiv.textContent = resultData.badge;
+                    resultDiv.appendChild(badgeDiv);
+                }
+
+                // Apply dynamic styles
+                percentageSpan.style.backgroundImage = `linear-gradient(120deg, ${resultData.color}, var(--accent-color), ${resultData.color === 'gold' ? '#ffeb3b' : 'var(--secondary-color)'})`;
+                percentageSpan.style.backgroundSize = '300% 300%';
+                percentageSpan.style.animation = 'percentageFlow 5s ease infinite';
+                loveMeterFill.style.background = `linear-gradient(90deg, ${resultData.color}, ${resultData.color === 'var(--gold-color)' ? '#ffc107' : resultData.color})`;
+
+                // Show result
+                resultDiv.className = 'result-area show';
+
+                // Generate share options
+                generateShareOptions();
+                shareOptionsDiv.classList.add('show');
+
+                // Add to history
+                addHistoryEntry(name1, name2, percentage);
+
+                // Trigger particles
+                triggerParticleBurst(20, resultData.color);
+            }
+
+            historyToggleBtn.addEventListener('click', () => historyPanel.classList.toggle('show'));
+            closeHistoryBtn.addEventListener('click', () => historyPanel.classList.remove('show'));
+            clearHistoryBtn.addEventListener('click', clearHistory);
+
+            // Initialize on load
+            loadHistory();
+            window.addEventListener('resize', initParticleCanvas);
+            initParticleCanvas();
+        });
+    </script>
+</body>
+</html>
